@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello, World!"
+    return "KSKSKSK TESTE !"
 
 
 @app.route('/sobre')
 def sobre():
-    return "Esta é uma aplicação de teste com Flask."
+    return "oi AMOR EU ESTOU AQUI"
 
 
 if __name__ == '__main__':

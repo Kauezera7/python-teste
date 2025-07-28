@@ -8,14 +8,14 @@ try:
 
    
     if resposta.status_code == 200:
-        print(" Requisição bem-sucedida!")
+        print("  bem-sucedida!")
         print(" Conteúdo da página (trecho):")
         print(resposta.text[:500])  
     else:
         print(f" Erro HTTP: Código {resposta.status_code}")
 
 except requests.exceptions.ConnectionError:
-    print(" Erro: Não foi possível conectar ao site (Problema de conexão).")
+    print(" Erro: Não foi possível conectar ao site (DDF).")
 
 except requests.exceptions.Timeout:
     print(" Erro: Tempo de conexão esgotado.")

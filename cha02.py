@@ -2,11 +2,11 @@ import psycopg2
 from psycopg2 import OperationalError, Error
 
 # Dados de conexão
-host = "1"
-port = "5"
-database = "dev"
-user = "usr"
-password = "u"
+host = ""
+port = ""
+database = ""
+user = ""
+password = ""
 
 try:
     
@@ -22,7 +22,7 @@ try:
     cursor = conexao.cursor()
 
     
-    cursor.execute("SELECT * FROM avaliacao.funcionarios;")
+    cursor.execute("SELECT * FROM;")
 
   
     registros = cursor.fetchall()
@@ -42,4 +42,4 @@ finally:
         cursor.close()
     if 'conexao' in locals():
         conexao.close()
-    print("🔒 Conexão encerrada.")
+    print("Conexão encerrada.")
